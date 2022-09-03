@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp">
+
+        <com.jawon.han.widget.HanTextView
+            android:id="@+id/bookmarkListViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bookMarkList" />
+
+        <com.jawon.han.widget.HanListView
+            android:id="@+id/bookmarkListView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="50dp"
+            android:labelFor="@+id/bookmarkListViewLabel" />
+
+        <com.jawon.han.widget.HanListEmptyView
+            android:id="@+id/bookmarkListEmptyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:labelFor="@id/bookmarkListViewLabel" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bookmarkListButtonLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+
+        <com.jawon.han.widget.HanButton
+            android:id="@+id/btnSaveFromBookMark"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/setting" />
+
+        <com.jawon.han.widget.HanButton
+            android:id="@+id/btnDeleteBookMark"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/deleteBookMark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+
+        android:orientation="horizontal"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp">
+
+        <com.jawon.han.widget.HanTextView
+            android:id="@+id/recentListViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recentList" />
+
+        <com.jawon.han.widget.HanListView
+            android:id="@+id/recentListView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="50dp"
+            android:labelFor="@+id/recentListViewLabel" />
+
+        <com.jawon.han.widget.HanListEmptyView
+            android:id="@+id/recentListEmptyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:labelFor="@id/recentListViewLabel" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recentListButtonLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+
+        <com.jawon.han.widget.HanButton
+            android:id="@+id/btnSaveFromRecent"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/setting" />
+
+        <com.jawon.han.widget.HanButton
+            android:id="@+id/btnAddBookMark"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/addBookMark" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">소리 인식 알람</string>
+
+    <string name="search">찾기</string>
+    <string name="exit">끝내기</string>
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+    <string name="save">저장</string>
+    <string name="option">옵션</string>
+    <string name="bookmark">즐겨 찾기</string>
+    <string name="off">끄기</string>
+    <string name="on">켜기</string>
+    <string name="volume">크기</string>
+    <string name="setting">설정</string>
+    <string name="sensitivity">민감도</string>
+    <string name="alarm">알람</string>
+    <string name="minute">분</string>
+    <string name="additional">추가</string>
+
+    <string name="bookMarkList">즐겨 찾기 목록</string>
+    <string name="deleteBookMark">즐겨 찾기 삭제</string>
+    <string name="recentList">최근 목록</string>
+    <string name="addBookMark">즐겨 찾기 추가</string>
+    <string name="alarmOff">알람 끄기</string>
+    <string name="stopService">서비스 종료</string>
+    <string name="alarmTime">알람 울리는 시간</string>
+    <string name="alarmOnOffSetting">알람 기능 켜기 / 끄기 설정</string>
+    <string name="onOffSetting">켜기 / 끄기 설정</string>
+    <string name="saveSetting">설정이 저장되었습니다.</string>
+    <string name="saveOptions">옵션이 저장되었습니다.</string>
+    <string name="completeSettings">설정이 완료되었습니다.</string>
+    <string name="completeDeleteBookMark">즐겨찾기 삭제가 완료되었습니다.</string>
+    <string name="comleteAddBookMark">즐겨찾기 추가가 완료되었습니다.</string>
+    <string name="settingAlreadyExist">동일한 설정이 즐겨찾기에 있습니다.</string>
+    <string name="stopService2">서비스가 종료 되었습니다.</string>
+
+</resources>

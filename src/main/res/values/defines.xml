@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="file_name_bookmark" translatable="false">bookmark.txt</string>
+    <string name="file_name_recent" translatable="false">recent.txt</string>
+
+    <string name="greater_than_sign" translatable="false">></string>
+    <string name="next_lign" translatable="false">\n</string>
+    <string name="slash" translatable="false">/</string>
+    <string name="space" translatable="false">\u0020</string>
+
+    <string name="settingValue" translatable="false">settingValue</string>
+    <string name="value" translatable="false">value</string>
+    <string name="optionEnglish" translatable="false">option</string>
+    <string name="sensitivityEnglish" translatable="false">sensitivity</string>
+    <string name="alarmTimeEnglish" translatable="false">alarmTime</string>
+    <string name="volumeEnglish" translatable="false">volume</string>
+    <string name="onOff" translatable="false">onOff</string>
+
+    <string name="numberOne" translatable="false">1</string>
+    <string name="numberFive" translatable="false">5</string>
+
+    <string name="screenOff" translatable="false">android.intent.action.SCREEN_OFF</string>
+    <string name="screenOn" translatable="false">android.intent.action.SCREEN_ON</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hanlib="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemSetting"
+        android:title="@string/onOffSetting"
+        hanlib:brailleCombineKey="hk_Backspace"
+        hanlib:brailleHotkey="f"
+        hanlib:brailleIsCallDlg="false"
+        hanlib:brailleShortCutkey="f" />
+
+    <item
+        android:id="@+id/itemOption"
+        android:title="@string/option"
+        hanlib:brailleCombineKey="hk_Backspace"
+        hanlib:brailleHotkey="o"
+        hanlib:brailleIsCallDlg="false"
+        hanlib:brailleShortCutkey="o" />
+    <item
+        android:id="@+id/itemExit"
+        android:title="@string/exit"
+        hanlib:brailleCombineKey="hk_Space"
+        hanlib:brailleHotkey="z"
+        hanlib:brailleIsCallDlg="false"
+        hanlib:brailleShortCutkey="z" />
+
+</menu>

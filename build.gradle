@@ -1,0 +1,127 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+        google() // or mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.1'
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6.2"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: "org.sonarqube"
+
+android {
+    signingConfigs {
+        debug {
+            keyAlias 'androidreleasekey'
+            keyPassword 'hims9901'
+            storeFile file('certs/platform.jks')
+            storePassword 'hims9901'
+        }
+
+        release {
+            keyAlias 'androidreleasekey'
+            keyPassword 'hims9901'
+            storeFile file('certs/platform.jks')
+            storePassword 'hims9901'
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId 'com.selvashc.programs.clapalarm'
+        minSdkVersion 22
+        targetSdkVersion 22
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0.0"
+
+        sourceSets.main {
+            jniLibs.srcDir 'src/main/libs'
+            jni.srcDirs = []
+        }
+        jackOptions {
+            enabled true
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            testCoverageEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            testCoverageEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    tasks.all {
+        task ->
+            if (task.name.contains('mockableAndroidJar'))
+                task.enabled = false
+    }
+    task publish(dependsOn: ['assembleRelease', 'assembleDebug']) << {
+
+    }
+    lintOptions {
+        abortOnError false
+    }
+    productFlavors {
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sonarqube {
+        androidVariant 'release'
+    }
+
+}
+
+project(":hanLibrary-release") {
+    sonarqube {
+        skipProject = true
+    }
+}
+
+sonarqube {
+    properties {
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.host.url", "http://ec2-52-79-182-196.ap-northeast-2.compute.amazonaws.com:9000"
+        property "sonar.login", "admin"
+        property "sonar.password", "8945"
+        property "sonar.scm.disabled", "True"
+    }
+}
+
+dependencies {
+    compile project(':hanLibrary-release')
+    compile files('libs/opencv_library-2.4.3.jar')
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+}
+
+
+

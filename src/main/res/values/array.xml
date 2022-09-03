@@ -1,0 +1,14 @@
+<resources>
+
+    <string-array name="settings_braille_cursor_listArray">
+        <item>Always up</item>
+        <item>Blinking</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="settings_braille_cursor_listValue">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

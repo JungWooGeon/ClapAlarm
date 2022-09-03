@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Check Sound Alarm</string>
+
+    <string name="search">Search</string>
+    <string name="exit">Exit</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="option">Option</string>
+    <string name="bookmark">Favorites</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="volume">Volume:</string>
+    <string name="setting">Settings</string>
+    <string name="sensitivity">Sensitivity:</string>
+    <string name="alarm">Alarm</string>
+    <string name="minute">minute</string>
+    <string name="additional">additional</string>
+
+    <string name="bookMarkList">Favorites</string>
+    <string name="deleteBookMark">Delete Favorites</string>
+    <string name="recentList">Recently List</string>
+    <string name="addBookMark">Add favorites</string>
+    <string name="alarmOff">Turn off Alarm</string>
+    <string name="stopService">Stop Service</string>
+    <string name="alarmTime">Duration:</string>
+    <string name="alarmOnOffSetting">Set alarm turn on or /off.</string>
+    <string name="onOffSetting">Set Turn On or Off</string>
+    <string name="saveSetting">Success to save settings.</string>
+    <string name="saveOptions">Success to save options.</string>
+    <string name="completeSettings">Setting completed.</string>
+    <string name="completeDeleteBookMark">Success to delete favorites.</string>
+    <string name="comleteAddBookMark">Success to add favorites.</string>
+    <string name="settingAlreadyExist">Already exist same settings.</string>
+    <string name="stopService2">Stop Check Sound Alarm Service</string>
+
+</resources>
