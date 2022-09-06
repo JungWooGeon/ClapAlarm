@@ -10,7 +10,7 @@
 ### 사용
  * android, android studio
  * java, AsyncTask
- * Service, Broadcast Receiver
+ * Service, Broadcast Receiver, PowerManager, WakeLock, SharedPreferences
  * MVP
 
 <br><br>
@@ -22,7 +22,6 @@
 
 ### 기능
  * 알람 기능
-  * 
  * 시작 설정 옵션
  * 즐겨찾기 기능
  
