@@ -7,7 +7,7 @@
 
 <br><br>
 
-### 사용
+### 🛠 사용
  * android, android studio
  * java, AsyncTask
  * Service, Broadcast Receiver, PowerManager, WakeLock, SharedPreferences
@@ -20,7 +20,7 @@
 
 <br><br>
 
-### 🛠 기능
+### ⭐️ 기능
  * 알람 기능
  * 시작 설정 옵션
  * 즐겨찾기 기능
