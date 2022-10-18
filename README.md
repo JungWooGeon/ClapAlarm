@@ -35,5 +35,7 @@
 <br><br>
 
 ### 📃 Learned
-
+ * Android 4대 컴포넌트 중 Service와 Broadcast Receiver를 사용해보면서 익힐 수 있었음
+ * PowerManager 에 WakeLock을 사용해보며, 잠들어있는 기기를 깨우는 기능을 사용해볼 수 있었음
+ * MVP 패턴에 대해 조금 더 알아갈 수 있었음
 <br>
